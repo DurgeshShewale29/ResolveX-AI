@@ -1,8 +1,11 @@
 cd backend
 venv\Scripts\activate
+pip install fastapi uvicorn pymongo python-dotenv openai sentence-transformers
 python main.py
 
-cd frontend 
+cd frontend
+npm install tailwindcss postcss autoprefixer axios
+npx tailwindcss init -p
 npm run dev
 
 
