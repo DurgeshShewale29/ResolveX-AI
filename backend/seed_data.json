@@ -1,0 +1,22 @@
+[
+  {
+    "ticket_id": "INC-1001",
+    "timestamp": "2026-03-10T08:30:00Z",
+    "issue_title": "Database Connection Timeout",
+    "error_log": "OperationalError: FATAL: remaining connection slots are reserved for non-replication superuser connections",
+    "system_component": "PostgreSQL Database",
+    "historical_resolution": "Increased max_connections in postgresql.conf from 100 to 200 and restarted the database service.",
+    "resolution_confidence": 0.95,
+    "human_approved": true
+  },
+  {
+    "ticket_id": "INC-1002",
+    "timestamp": "2026-03-12T14:15:00Z",
+    "issue_title": "High Memory Usage on Payment Gateway",
+    "error_log": "java.lang.OutOfMemoryError: Java heap space",
+    "system_component": "Payment Microservice",
+    "historical_resolution": "Flushed Redis cache and restarted the payment microservice container. Monitored heap limits.",
+    "resolution_confidence": 0.88,
+    "human_approved": true
+  }
+]
