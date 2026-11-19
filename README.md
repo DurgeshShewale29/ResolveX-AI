@@ -1,16 +1,3 @@
-cd backend
-venv\Scripts\activate
-pip install fastapi uvicorn pymongo python-dotenv openai sentence-transformers
-python main.py
-
-cd frontend
-npm install tailwindcss postcss autoprefixer axios
-npx tailwindcss init -p
-npm run dev
-
-
-
-
 # ⚡ ResolveX AI - Enterprise AIOps Command Center
 
 An autonomous, AI-driven Level-1 IT Operations agent built to predict incidents, instantly identify root causes via semantic search, and execute remediation scripts under strict Human-in-the-Loop (HITL) governance.
@@ -34,4 +21,10 @@ cd backend
 python -m venv venv
 source venv/bin/activate  # On Windows: .\venv\Scripts\activate
 pip install -r requirements.txt
+cd backend
 python main.py
+
+cd frontend
+npm install tailwindcss postcss autoprefixer axios
+npx tailwindcss init -p
+npm run dev
